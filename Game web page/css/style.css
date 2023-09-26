@@ -134,10 +134,11 @@ p{
 }
 
 .small-container{
-    max-width: 1080px;
+    /* max-width: 1080px; */
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
+    
 }
 
 .call-4{
@@ -190,7 +191,7 @@ h4{
 }
 
 .offer{
-    background: radial-gradient(#fff );
+    background: radial-gradient(#fff,#55cce0);
     margin-top: 80px;
     padding: 30px 0;  
 }
@@ -502,6 +503,7 @@ input:focus{
     cursor: pointer;
 }
 
+             /* ------- cart items -------- */
 
 .cart-page{
     margin: 80px auto;
@@ -512,7 +514,7 @@ table{
     border-collapse: collapse;
 }
 
-.cart-info{
+.card-info{
     display: flex;
     flex-wrap: wrap;
 }
@@ -538,14 +540,33 @@ td input{
 td a{
     color: #5cff3b;
     font-size: 12px;
+    
 }
 
 td img{
     width: 80px;
     height: 80px;
     margin-right: 10px;
+} 
+
+.total-price{
+    display: flex;
+    justify-content: flex-end;
 }
 
+.total-price table{
+    border-top: 3px solid #5cff3b;
+    width: 105%;
+    max-width: 400px;
+}
+
+td:last-child{
+    text-align: right;
+}
+
+th:last-child{
+    text-align: right;
+}
 
 
 
@@ -573,5 +594,18 @@ td img{
         font-size: 26px;
         line-height: 32px;
     }
+
+    .card-info p{
+        display: none;
+    }
+
+    .footer-call-4{
+        margin-left: 20px;
+    }
+
+    .footer-call-2 {
+        position: relative;
+        bottom: -20rem;
+        left: -4rem;
+    }
 }
-  
